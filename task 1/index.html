@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="../task 1/image/150x150 image.jpg" alt="Thumbnail 1" onclick="openModal();currentSlide(1)" class="thumbnail">
+        <img src="../task 1/image/150x150-1 image.jpg" alt="Thumbnail 2" onclick="openModal();currentSlide(2)" class="thumbnail">
+        <img src="../task 1/image/150x150-2 image-01.jpg" alt="Thumbnail 3" onclick="openModal();currentSlide(3)" class="thumbnail">
+        <!-- Add more thumbnails as needed -->
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="../task 1/image/150x150 image.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="../task 1/image/150x150-1 image.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="../task 1/image/150x150-2 image-01.jpg" style="width:100%">
+            </div>
+            <!-- Add more full-size images as needed -->
+        </div>
+    </div>
+
+    <script src="../task 1/js/script.js"></script>
+</body>
+
+</html>
